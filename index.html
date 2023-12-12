@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Lightbox_test_02</title>
+    <link rel="stylesheet" href="styles/lightbox.min.css">
     <link rel="stylesheet" href="screen.css">
   </head>
   <body>
     <h1>Illustrations</h1>
-    <script src="index.js"></script>
+    <div class="gallery-container">
+      <a data-lightbox="illus" data-title="Illustration 1, Pearlescent currents" href="images/Mermaid.png"><img src="images/Mermaid.png" alt="Mermaid"></a>
+      <a data-lightbox="illus" href="images/Spirit.png"><img src="images/Spirit.png" alt="Spirit"></a>
+      <a data-lightbox="illus" href="images/Star_Gazing.png"><img src="images/Star_Gazing.png" alt="Star gazing"></a>
+    </div>
+
+
+
+
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      });
+  </script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>
 
